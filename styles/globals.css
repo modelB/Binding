@@ -1,9 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Lora", serif;
+  color: #f95353;
+}
+
+.theme-red {
+  color: #f95353;
+}
+
+.cursive {
+  font-family: "Great Vibes", cursive;
 }
 
 a {
@@ -15,12 +27,19 @@ a {
   box-sizing: border-box;
 }
 
+.centered-screen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
   body {
-    color: white;
     background: black;
   }
 }
