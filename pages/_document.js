@@ -12,10 +12,11 @@ class MyDocument extends Document {
             crossOrigin="true"
           />
           <link
-            href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
             rel="stylesheet"
           ></link>
-          <script async
+          <script
+            async
             src="https://kit.fontawesome.com/30d939d316.js"
             crossOrigin="anonymous"
           ></script>

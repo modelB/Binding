@@ -7,11 +7,11 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Lora", serif;
-  color: #f95353;
+  color: rgb(15, 15, 15);
 }
 
-.theme-red {
-  color: #f95353;
+.theme-red:hover {
+  color: #d50101;
 }
 
 .cursive {
@@ -35,11 +35,17 @@ a {
   transform: translate(-50%, -50%);
 }
 
+.hover-inverse:hover {
+  color: white;
+  background-color: rgb(15, 15, 15);
+  border-color: rgb(15, 15, 15);
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
   body {
-    background: black;
+    background: white;
   }
 }
