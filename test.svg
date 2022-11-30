@@ -11,32 +11,32 @@
 
     <foreignObject x="3%" y="9%" width="94%" height="100%">
         <div xmlns="http://www.w3.org/1999/xhtml" class="base">
-            <div class='flex'>
+            <div class="flex">
                 <span>
-                    <span class='bold'>Buyer: </span>
+                    <span class="bold">Buyer: </span>
                     Brian Grosso
                 </span>
                 <span>
-                    <span class='bold'>Product: </span>
+                    <span class="bold">Product: </span>
                     Translation Services
                 </span>
                 <span>
-                    <span class='bold'>Price: </span>
+                    <span class="bold">Price: </span>
                     $1,200
                 </span>
                 <span>
-                    <span class='bold'>Seller: </span>
+                    <span class="bold">Seller: </span>
                     Clayton Young
                 </span>
             </div>
 
-            <div class='small flex'>
+            <div class="small flex">
                 <span>
-                    <span class='bold'>Buyer Address: </span>
+                    <span class="bold">Buyer Address: </span>
                     0xC0e90583cc27191Ab17407Ac3595E1509ffDA69F
                 </span>
                 <span>
-                    <span class='bold'>Seller Address: </span>
+                    <span class="bold">Seller Address: </span>
                     0xA247e0BCEb1a503a290e39BE7310C7B2C253fd80
                 </span>
 
@@ -44,21 +44,21 @@
 
             <p class="tiny">THIS SALES CONTRACT (this “Agreement” or this “Sales Contract”), effective as of {{contract_date}}, is made and entered into by and between Clayton Young, an individual of Manila, Metro Manila, Philippines controlling the Ethereum wallet address of 0xC0e90583cc27191Ab17407Ac3595E1509ffDA69F (hereinafter the “Seller”), and Brian Grosso, an individual of Newark, New Jersey, United States of America controlling the Ethereum wallet address of 0xC0e90583cc27191Ab17407Ac3595E1509ffDA69F (hereinafter the “Buyer”).</p>
             <p class="tiny">1. APPLICABILITY. The Buyer may place orders (“Order(s)”) with Seller and all such Orders will be governed solely by the terms in this Sales Contract, unless otherwise mutually agreed. Any oral understandings are expressly excluded. Seller shall not be deemed to have waived the terms contained herein if it fails to object to provisions appearing on, incorporated by reference in, or attached to any Buyer order form, and those provisions are hereby expressly rejected. No contrary or additional terms contained in any Buyer order shall apply unless agreed to in writing and signed by an authorized representative of Seller. Additionally, Seller reserves the right to reject any Order submitted to it by Buyer.</p>
-            <p class="tiny">2. DELIVERY. Delivery shall be made within the time specied on Buyer's Order or in accordance with Seller's quoted lead time and monthly delivery rate, whichever is later. Transportation charges are included in the prices quoted herein and as such the responsibility of Seller.</p>
-            <p class="tiny">3. INSPECTION. The Buyer shall inspect and accept, or reject products delivered pursuant to the Order immediately after Buyer takes custody of such products. In the event the products do not comply with the applicable Seller specifications, the Buyer shall notify the Seller of such nonconformance and give the Seller a reasonable opportunity to correct any such nonconformance. The Buyer shall be deemed to have accepted any products delivered hereunder and to have waived any such nonconformance in the event Seller does not receive notication that the products delivered hereunder do not comply with the Seller's specifications, within fifteen (15) days after the Buyer takes custody of such products.</p>
-            <p class="tiny">4. PRICES AND PAYMENT. Prices and payments will be in United States dollars, and payment shall be made in the United States currency or Ethereum mainnet ether. Payment is due immediately upon delivery. Prices quoted are believed to be accurate; however, Seller reserves the right to correct any inadvertent errors in these prices prior to acceptance of the Order. In the event payments are not made in a timely manner, Seller may, in addition to all other remedies provided at law, either: (1) declare Buyer's performance in breach and terminate this Order for default; (2) repossess the goods for which payment has not been made; (3) withhold future shipments under this Order until delinquent payments are made; (4) deliver future shipments under this Order on a cash with Order or cash in advance basis even after the delinquency is cured; (5) charge interest on the delinquency at a rate of 1-1/2% per month or the maximum rate permittedby law, if lower, for each month or part thereof of delinquency in payment plus applicable storage charges, or inventory carrying charges; or (6) recover all costs of collection including reasonable attorney's fees; and (7) at Seller's option combine any of the above rights and remedies as provided by law.</p>
+            <p class="tiny">2. DELIVERY. Delivery shall be made within the time specied on Buyer"s Order or in accordance with Seller"s quoted lead time and monthly delivery rate, whichever is later. Transportation charges are included in the prices quoted herein and as such the responsibility of Seller.</p>
+            <p class="tiny">3. INSPECTION. The Buyer shall inspect and accept, or reject products delivered pursuant to the Order immediately after Buyer takes custody of such products. In the event the products do not comply with the applicable Seller specifications, the Buyer shall notify the Seller of such nonconformance and give the Seller a reasonable opportunity to correct any such nonconformance. The Buyer shall be deemed to have accepted any products delivered hereunder and to have waived any such nonconformance in the event Seller does not receive notication that the products delivered hereunder do not comply with the Seller"s specifications, within fifteen (15) days after the Buyer takes custody of such products.</p>
+            <p class="tiny">4. PRICES AND PAYMENT. Prices and payments will be in United States dollars, and payment shall be made in the United States currency or Ethereum mainnet ether. Payment is due immediately upon delivery. Prices quoted are believed to be accurate; however, Seller reserves the right to correct any inadvertent errors in these prices prior to acceptance of the Order. In the event payments are not made in a timely manner, Seller may, in addition to all other remedies provided at law, either: (1) declare Buyer"s performance in breach and terminate this Order for default; (2) repossess the goods for which payment has not been made; (3) withhold future shipments under this Order until delinquent payments are made; (4) deliver future shipments under this Order on a cash with Order or cash in advance basis even after the delinquency is cured; (5) charge interest on the delinquency at a rate of 1-1/2% per month or the maximum rate permittedby law, if lower, for each month or part thereof of delinquency in payment plus applicable storage charges, or inventory carrying charges; or (6) recover all costs of collection including reasonable attorney"s fees; and (7) at Seller"s option combine any of the above rights and remedies as provided by law.</p>
             <p class="tiny">5. SETOFF. All amounts that Buyer owes Seller under an Order shall be due and payable according to the terms of an Order. Buyer is prohibited from and shall not set off such amounts or any portion thereof, whether or not liquidated, against sums which Buyer asserts are due it, from its parent affiliates, subsidiaries or other divisions or units under other transactions with Seller, its parents, affiliates, subsidiaries or other divisions or units.</p>
-            <p class="tiny">6. CANCELLATION. Buyer reserves the right to cancel any portion of this Order affected by a default of Seller or any insolvency or suspension of Seller's operations or any petition led or proceeding commenced by or against Seller under any state or federal law relating to bankruptcy, arrangement, reorganization, receivership or assignment for the benefit of creditors.</p>
+            <p class="tiny">6. CANCELLATION. Buyer reserves the right to cancel any portion of this Order affected by a default of Seller or any insolvency or suspension of Seller"s operations or any petition led or proceeding commenced by or against Seller under any state or federal law relating to bankruptcy, arrangement, reorganization, receivership or assignment for the benefit of creditors.</p>
             <p class="tiny">7. DISPUTES. Except as otherwise specically agreed in writing by Buyer and Seller, any dispute relating to an Order placed by a Buyer incorporated in the United States which is not resolved by the parties shall be adjudicated by any court of competent jurisdiction. For Orders placed by a Buyer incorporated outside the United States, the parties shall resort to binding arbitration under mutually agreed procedures.</p>
-            <p class="tiny">8. APPLICABLE LAW. This Agreement shall be interpreted in accordance with the laws of the jurisdiction in which the Seller's facility accepting the Order hereunder is located, exclusive of any choice of law provisions. The Seller and Buyer expressly agree to exclude from this Agreement the United Nations Convention on Contracts for the International Sale of Goods, 1980, and any successor thereto.</p>
-            <p class="tiny">9. LIMITATION OF LIABILITY. Seller's liability on any claim for loss or damage arising out of, connected with, or resulting from an Order, or from the performance or breach thereof, or from the manufacture, sale, delivery, resale, repair or use of any product covered by or furnished under an Order shall in no case exceed the price allocable to the product or part thereof which gives rise to the claim. In no event shall Seller be liable for special, incidental or consequential damages. Except as herein expressly provided to the contrary, the provisions of this Order are for the benefit of the parties to the Order and not for the benefit of any other person.</p>
+            <p class="tiny">8. APPLICABLE LAW. This Agreement shall be interpreted in accordance with the laws of the jurisdiction in which the Seller"s facility accepting the Order hereunder is located, exclusive of any choice of law provisions. The Seller and Buyer expressly agree to exclude from this Agreement the United Nations Convention on Contracts for the International Sale of Goods, 1980, and any successor thereto.</p>
+            <p class="tiny">9. LIMITATION OF LIABILITY. Seller"s liability on any claim for loss or damage arising out of, connected with, or resulting from an Order, or from the performance or breach thereof, or from the manufacture, sale, delivery, resale, repair or use of any product covered by or furnished under an Order shall in no case exceed the price allocable to the product or part thereof which gives rise to the claim. In no event shall Seller be liable for special, incidental or consequential damages. Except as herein expressly provided to the contrary, the provisions of this Order are for the benefit of the parties to the Order and not for the benefit of any other person.</p>
             <p class="tiny">10. TAXES. The prices quoted herein include sales taxes and duties. As such they are the responsibility of Seller.</p>
             <p class="tiny">11. ASSIGNMENT. Neither party shall assign this Order or any portion thereof without the advance, written consent of the other party, which consent shall not be unreasonably withheld. The non-assigning party shall not have any obligation to an assignee of the assigning party unless such consent is obtained.</p>
             <p class="tiny">12. SEVERABILITY. If any provision of these Conditions of Sale is determined to be illegal, invalid, or unenforceable, for any reason, then such provision shall be deemed stricken for purpose of the dispute in question, and all other provisions shall remain in full force and effect.</p>
             <div class="flex margin-top-8">
                 <div>
                     <p>Buyer Signature:</p>
-                    <p class='bold margin-top-4'>Brian Grosso</p>
+                    <p class="bold margin-top-4">Brian Grosso</p>
                     <p class="italic underline">Brian Grosso</p>
                     <p>11/12/22</p>
                 </div>
