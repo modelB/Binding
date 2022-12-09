@@ -10,6 +10,10 @@ body {
   color: rgb(15, 15, 15);
 }
 
+body {
+  padding-top: 0;
+}
+
 .theme-red:hover {
   color: #d50101;
 }
@@ -39,13 +43,4 @@ a {
   color: white;
   background-color: rgb(15, 15, 15);
   border-color: rgb(15, 15, 15);
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    background: white;
-  }
 }

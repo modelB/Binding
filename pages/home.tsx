@@ -1,25 +1,9 @@
-import { useContext, useEffect } from "react";
-import { AccountContext } from "../contexts/account-context";
+import { useRouter } from "next/router";
+import { Button } from "../components/button";
 
 export default function Home() {
-  const { account } = useContext(AccountContext);
-  
-
-  useEffect(() => {
-    console.log("account in home", account);
-  }, []);
+  const router = useRouter();
   return (
-    <>
-      <button
-        className="border-2 rounded-sm border-solid border-current p-2 theme-red"
-      >
-        Create Contract
-      </button>
-      <button
-        className="border-2 rounded-sm border-solid border-current p-2 theme-red"
-      >
-        Get Contract
-      </button>
-    </>
+    <Button text="Create Contract" onClick={() => router.push('/create')} />
   );
 }

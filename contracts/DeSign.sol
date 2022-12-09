@@ -52,21 +52,21 @@ contract DeSign is ERC721, ERC721URIStorage {
                 sourceContract.buyer_name,
                 ", an individual controlling the Ethereum wallet address of "
             ),
-            sourceContract.buyer_wallet_address.toHexString(),
             string.concat(
+                sourceContract.buyer_wallet_address.toHexString(),
                 ' (hereinafter the "Buyer"). Buyer agrees to pay seller consideration of ',
                 sourceContract.price,
                 ' and in exchange Seller agrees to provide buyer with ',
                 sourceContract.product,
-                '.</p><p class="tiny">1. APPLICABILITY. The Buyer may place orders ("Order(s)") with Seller and all such Orders will be governed solely by the terms in this Sales Contract, unless otherwise mutually agreed. Any oral understandings are expressly excluded.</p><p class="tiny">2. DELIVERY. Delivery shall be made within the time specied on Order or in accordance with quoted lead time of Seller and monthly delivery rate, whichever is later. Transportation charges are included in the prices quoted herein and as such the responsibility of Seller.</p><p class="tiny">3. INSPECTION. The Buyer shall inspect and accept, or reject products delivered pursuant to the Order immediately after Buyer takes custody of such products.</p><p class="tiny">4. PRICES AND PAYMENT. Prices and payments will be in United States dollars, and payment shall be made in the United States currency or Ethereum mainnet ether. Payment is due immediately upon delivery. In the event payments are not made in a timely manner, Seller may, in addition to all other remedies provided at law, charge interest on the delinquency at a rate of 5% per month or the maximum rate permittedby law, if lower, for each month or part thereof of delinquency in payment.</p><p class="tiny">5. CANCELLATION. Buyer reserves the right to cancel any portion of this Order affected by a default of Seller or any insolvency or suspension of Seller operations or any petition led or proceeding commenced by or against Seller under any state or federal law relating to bankruptcy, arrangement, reorganization, receivership or assignment for the benefit of creditors.</p><p class="tiny">6. DISPUTES. Except as otherwise specically agreed in writing by Buyer and Seller, any dispute relating to an Order placed by a Buyer incorporated in the United States which is not resolved by the parties shall be adjudicated by any court of competent jurisdiction. For Orders placed by a Buyer incorporated outside the United States, the parties shall resort to binding arbitration under mutually agreed procedures.</p><p class="tiny">7. APPLICABLE LAW. This Agreement shall be interpreted in accordance with the laws of the jurisdiction in which the Seller facility accepting the Order hereunder is located, exclusive of any choice of law provisions. The Seller and Buyer expressly agree to exclude from this Agreement the United Nations Convention on Contracts for the International Sale of Goods, 1980, and any successor thereto.</p><p class="tiny">8. LIMITATION OF LIABILITY. Seller liability on any claim for loss or damage arising out of, connected with, or resulting from an Order, or from the performance or breach thereof, or from the manufacture, sale, delivery, resale, repair or use of any product covered by or furnished under an Order shall in no case exceed the price allocable to the product or part thereof which gives rise to the claim. In no event shall Seller be liable for special, incidental or consequential damages. Except as herein expressly provided to the contrary, the provisions of this Order are for the benefit of the parties to the Order and not for the benefit of any other person.</p><p class="tiny">9. TAXES. The prices quoted herein include sales taxes and duties. As such they are the responsibility of Seller.</p><div class="flex margin-top-8"><div><p>Buyer Signature:</p><p class="italic underline margin-top-8">',
-                sourceContract.buyer_name,
-                "</p><p>",
+                '.</p><p class="tiny">1. APPLICABILITY. The Buyer may place orders ("Order(s)") with Seller and all such Orders will be governed solely by the terms in this Sales Contract, unless otherwise mutually agreed. Any oral understandings are expressly excluded.</p><p class="tiny">2. DELIVERY. Delivery shall be made within the time specified. Transportation charges are included in the prices quoted herein and as such the responsibility of Seller.</p><p class="tiny">3. INSPECTION. The Buyer shall inspect and accept, or reject products delivered pursuant to the Order immediately after Buyer takes custody of such products.</p><p class="tiny">4. PRICES AND PAYMENT. Prices and payments will be in United States dollars, and payment shall be made in the United States currency or Ethereum mainnet ether. Payment is due immediately upon delivery. In the event payments are not made in a timely manner, Seller may, in addition to all other remedies provided at law, charge interest on the delinquency at a rate of 5% per month or the maximum rate permittedby law, if lower, for each month or part thereof of delinquency in payment.</p><p class="tiny">5. CANCELLATION. Buyer reserves the right to cancel any portion of this Order affected by a default of Seller or any insolvency or suspension of Seller operations or any petition led or proceeding commenced by or against Seller under any state or federal law relating to bankruptcy, arrangement, reorganization, receivership or assignment for the benefit of creditors.</p><p class="tiny">6. DISPUTES. Except as otherwise specically agreed in writing by Buyer and Seller, any dispute relating to an Order placed by a Buyer incorporated in the United States which is not resolved by the parties shall be adjudicated by any court of competent jurisdiction. For Orders placed by a Buyer incorporated outside the United States, the parties shall resort to binding arbitration under mutually agreed procedures.</p><p class="tiny">7. APPLICABLE LAW. This Agreement shall be interpreted in accordance with the laws of the jurisdiction in which the Seller facility accepting the Order hereunder is located, exclusive of any choice of law provisions. The Seller and Buyer expressly agree to exclude from this Agreement the United Nations Convention on Contracts for the International Sale of Goods, 1980, and any successor thereto.</p><p class="tiny">8. LIMITATION OF LIABILITY. Seller liability on any claim for loss or damage arising out of, connected with, or resulting from an Order, or from the performance or breach thereof, or from the manufacture, sale, delivery, resale, repair or use of any product covered by or furnished under an Order shall in no case exceed the price allocable to the product or part thereof which gives rise to the claim. In no event shall Seller be liable for special, incidental or consequential damages. Except as herein expressly provided to the contrary, the provisions of this Order are for the benefit of the parties to the Order only.</p><p class="tiny">9. TAXES. The prices quoted herein include sales taxes. As such they are the responsibility of Seller.</p><div class="flex margin-top-8"><div><p>Buyer Signature:</p><p class="italic underline margin-top-8">',
+                sourceContract.buyer_sign_date != 0 ? sourceContract.buyer_name : "_______",
+                "</p><p>Timestamp: ",
                 sourceContract.buyer_sign_date.toString()
             ),
             string.concat(
                 '</p></div><div><p>Seller Signature:</p><p class="italic underline margin-top-8">',
-                sourceContract.seller_name,
-                "</p><p>",
+                sourceContract.seller_sign_date != 0 ? sourceContract.seller_name : "_______",
+                "</p><p>Timestamp: ",
                 sourceContract.seller_sign_date.toString(),
                 "</p></div></div></div></foreignObject></svg>"
             )
@@ -142,9 +142,6 @@ contract DeSign is ERC721, ERC721URIStorage {
 
     function updateContract(
         uint256 tokenId,
-        string memory buyer_name,
-        string memory seller_name,
-        string memory product,
         string memory price,
         string memory contract_date
     ) public {
@@ -160,18 +157,9 @@ contract DeSign is ERC721, ERC721URIStorage {
                 existingContract.seller_wallet_address == msg.sender,
             "Must be buyer or seller to update contract"
         );
-        tokenIdToContract[tokenId] = Contract(
-            tokenId,
-            buyer_name,
-            0,
-            existingContract.buyer_wallet_address,
-            seller_name,
-            0,
-            existingContract.seller_wallet_address,
-            product,
-            price,
-            contract_date
-        );
+        existingContract.price = price;
+        existingContract.contract_date = contract_date;
+        tokenIdToContract[tokenId] = existingContract;
         _setTokenURI(tokenId, getTokenURI(tokenId));
     }
 
@@ -196,6 +184,7 @@ contract DeSign is ERC721, ERC721URIStorage {
             );
             existingContract.seller_sign_date = block.timestamp;
         }
+        tokenIdToContract[tokenId] = existingContract;
         _setTokenURI(tokenId, getTokenURI(tokenId));
     }
 
