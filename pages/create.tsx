@@ -96,7 +96,7 @@ export const Create: FC = () => {
             <div>
               Check it out on{" "}
               <a
-                href={`https://mumbai.polygonscan.com/tx/${data?.hash}`}
+                href={`https://polygonscan.com/tx/${data?.hash}`}
                 target="_blank"
                 rel="noreferrer"
                 className="text-custom-red underline"

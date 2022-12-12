@@ -13,7 +13,7 @@ import "../styles/globals.css";
 
 export default function App({ Component, pageProps }: AppProps) {
   const { chains, provider } = configureChains(
-    [chain.polygonMumbai],
+    [chain.polygon],
     [publicProvider()]
   );
 
