@@ -4,5 +4,5 @@ import Home from "./home";
 
 export default function ConnectPage() {
   const { isConnected } = useAccount();
-  return <>{!isConnected ? <ConnectButton /> : <Home />}</>;
+  return <div className="m-auto">{!isConnected ? <ConnectButton /> : <Home />}</div>;
 }

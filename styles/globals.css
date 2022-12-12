@@ -31,16 +31,33 @@ a {
   box-sizing: border-box;
 }
 
-.centered-screen {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-}
-
 .hover-inverse:hover {
   color: white;
   background-color: rgb(15, 15, 15);
   border-color: rgb(15, 15, 15);
+}
+
+.spin {
+  color: #d50101;
+  height: 3rem;
+  width: 3rem;
+  -webkit-animation: spin 1s linear infinite;
+  -moz-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
